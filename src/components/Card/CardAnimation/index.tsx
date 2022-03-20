@@ -19,7 +19,11 @@ export function CardAnimation({ children, ...rest }: CardAnimationProps) {
 
   const animatedStyle = useAnimatedStyle(() => {
     return {
-        positionX: cardOffset.value,
+        transform: [
+          {
+            translateX: cardOffset.value,
+          }
+        ],
         opacity: cardOpacity.value
     }
   })

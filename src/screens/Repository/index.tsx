@@ -48,7 +48,7 @@ export function Repository() {
           <TextGroup>
             <TitleAnimation>
               {
-                repository.fullName
+                repository.full_name
               }
             </TitleAnimation>
 
@@ -92,7 +92,7 @@ export function Repository() {
                 title: issue.title,
                 subTitle: issue.user.login,
               }}
-            onPress={() => handleIssueNavigation(repository.issues_url)}
+          onPress={() => handleIssueNavigation(issue.html_url)}
             />
           )}
         />
